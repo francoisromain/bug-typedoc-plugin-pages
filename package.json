@@ -1,0 +1,34 @@
+{
+  "name": "bug-typedoc-plugin-pages",
+  "version": "0.1.0",
+  "description": "Typedoc plugin pages bug",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/francoisromain/bug-typedoc-plugin-pages"
+  },
+  "author": {
+    "name": "François Romain",
+    "email": "francoisromain@gmail.com",
+    "url": "https://francoisromain.com"
+  },
+  "homepage": "https://github.com/francoisromain/bug-typedoc-plugin-pages",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "docs": "rm -rf docs && typedoc src --sourcefile-url-prefix \"https://github.com/francoisromain/bug-typedoc-plugin-pages/blob/master/\"",
+    "docs:serve": "npx http-server docs"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.10",
+    "http-server": "^0.12.3",
+    "typescript": "^4.1.2"
+  },
+  "devDependencies": {
+    "ts-node": "^9.0.0",
+    "typedoc": "^0.19.2",
+    "typedoc-plugin-external-module-name": "^4.0.3",
+    "typedoc-plugin-pages": "^1.0.1",
+    "typedoc-plugin-sourcefile-url": "^1.0.6"
+  }
+}

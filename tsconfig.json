@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "target": "ES2017",
+    "types": [
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/__mocks__/*"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs",
+    "exclude": [
+      "**/*+(.test|.spec|.e2e).ts",
+      "**/__mocks__/**/*"
+    ],
+    "includeVersion": true,
+    "pages": {
+      "groups": [
+        {
+          "title": "Utilisation",
+          "pages": [
+            {
+              "title": "Introduction",
+              "source": "./docs-sources/01-utilisation/01-introduction.md"
+            }
+          ]
+        },
+        {
+          "title": "Développement et autre chose",
+          "pages": [
+            {
+              "title": "Début et fin",
+              "source": "./docs-sources/02-developpement/01-debut-et-fin.md"
+            }
+          ]
+        }
+      ]
+    },
+    "theme": "pages-plugin"
+  }
+}
